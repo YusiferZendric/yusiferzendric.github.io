@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class='scroll-smooth'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ZendricCV</title>
+</head>
+
+<body class="bg-slate-900 scroll-m-8">
+    <nav class="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-slate-900 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <img src="/src/dp.png" alt="profilePic" width="40" class="mr-4 rounded-full">
+            <span class="font-semibold text-xl tracking-tight">ZendricCV</span>
+        </div>
+        <div class="block lg:hidden ml-[30%]">
+            <button onclick="toggleNav()" id="nav"
+                class="flex items-center px-3 py-2 border rounded text-indigo-200 border-indigo-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <div class="text-sm hidden lg:flex-grow nav-btn">
+                <span onclick="changePage('home')" id="home"
+                    class="text-white block cursor-pointer mt-4 lg:inline-block lg:mt-0 duration-300 ease-in-out border-indigo-600 mx-5 border-b-4 font-semibold hover:text-white mr-4">
+                    Home
+                </span>
+                <span onclick="changePage('about')" id="about"
+                    class="block mt-4 lg:inline-block cursor-pointer lg:mt-0 duration-300 ease-in-out font-semibold mx-5 text-indigo-300 hover:text-white mr-4">
+                    About
+                </span>
+                <span onclick="changePage('skills')" id="skills"
+                    class="block mt-4 cursor-pointer lg:inline-block lg:mt-0 font-semibold mx-5 duration-300 ease-in-out text-indigo-300 hover:text-white mr-4">
+                    Skills
+                </span>
+                <span onclick="changePage('experience')" id="experience"
+                    class="block mt-4 cursor-pointer font-semibold mx-5 lg:inline-block lg:mt-0 duration-300 ease-in-out text-indigo-300 hover:text-white">
+                    Experience
+                </span>
+                <span onclick="changePage('hire')" id="hire"
+                    class="block mt-4 cursor-pointer font-semibold mx-5 lg:inline-block lg:mt-0 duration-300 ease-in-out text-indigo-300 hover:text-white">
+                    Contact
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="intro h-[90vh]">
+            <p class="text-indigo-500 font-semibold text-xl mt-[8%] ml-[10%] sm:text-2xl">Hello! 👋 My name is</p>
+            <h1 class="text-6xl font-bold text-white ml-[10%] mt-2">Aditya Singh</h1>
+            <h1 class="text-gray-500 ml-[14%] text-xl font-semibold italic mt-4">~Founder and CEO of <a
+                    href="https://yusiferzendric.github.io/React-ECommerce"
+                    class="border-b-4 border-indigo-500 duration-300 ease-in-out font-semibold hover:text-indigo-500">ZENDMKT</a>
+            </h1>
+            <p class="ml-[10%] text-gray-400 text-xl mt-[10%] font-semibold">I am an iOS and Web Developer. I 💖 coffee and brew my own
+                beers.</p>
+            <button onclick="Redirect('https://github.com/YusiferZendric?tab=repositories')"
+                class="bg-indigo-500 px-7 font-semibold text-white duration-100 ease-in rounded-sm mt-[5%] ml-[10%] p-4 hover:bg-indigo-400 hover:mt-[2.7%]">See
+                my Work</button>
+        </div>
+        <!-- this is about section below  -->
+        <div class="h-[170vh]">
+            <p class="font-bold text-5xl col-span-10 text-white border-b-8 pb-4 px-1 w-fit ml-[10%] h-fit mt-[4%] border-indigo-600"
+            id="#about">
+            About
+        </p>
+        <img src="/src/me.jpg" class="m-auto mt-[5%] border-indigo-500 border-4 rounded-md" alt="profile pic"
+            width="350">
+            <p class="text-gray-400 m-auto text-[1.125rem] mt-4 w-[75%]"> Hello! I'm Aditya and I'm a frontend developer,
+                data scientist and student from Delhi, India. <br><br> After building my first website and GUI app aged thirteen, I
+                knew I wanted to work with computers and technology, and I've kept working till then. <br><br>I've been working in various fields like Web Development, Data Science, GUI Development, Machine Learning, Competitive Programming, Discord/Telegram Bots Development etc <br> <br> In my 2 years journey, I've been focused on programming, building a solid
+                stack and creating exciting projects that solve real-world problems. <br><br> Alongside my design and
+                development work, Currently I am working on my E-Commerce website and I've recently created a text utility
+                called <a
+                    class="text-indigo-500 ease-in-out duration-150 border-indigo-500 cursor-pointer hover:text-white hover:border-b-2"
+                    href="https://yusiferzendric.github.io/TextUtils">TextUtils</a>, so I like to keep busy! Take a look
+                at my work below to see what I'm working on, and get in touch if you'd like to work together!</p> <br>
+            <br>
+        </div>
+    </div>
+
+
+    <div class="h-[80vh]">
+        <h1
+            class="font-bold text-5xl col-span-10 text-white border-b-8 pb-4 px-1 w-fit ml-[10%] h-fit mt-[4%] border-indigo-500">
+            Skills</h1>
+        <div class="grid grid-cols-2 justify-center gap-[5rem] bg-gray-800 rounded-lg w-[85%] m-auto mt-[5%] p-10">
+            <img class="w-[500%] justify-self-center" src="/src/html.png" alt="html" id="html">
+            <img class="w-[500%] justify-self-center" src="/src/css.png" alt="css" id="css">
+            <img class="w-[500%] justify-self-center" src="/src/js.png" alt="js" id="js">
+            <img class="w-[500%] justify-self-center" src="/src/c.png" alt="c" id="c">
+            <img class="w-[500%] justify-self-center" src="/src/react.png" alt="react" id="react">
+            <img class="w-[500%] justify-self-center" src="/src/python.png" alt="python" id="python">
+        </div>
+    </div>
+    <div class="h-[90vh]">
+        <h1
+            class="font-bold text-5xl col-span-10 text-white border-b-8 pb-4 px-1 w-fit ml-[10%] h-fit mt-[4%] border-indigo-500">
+            Experience</h1>
+        <table border="3" cellspacing="1" class="table-auto bg-slate-800 w-[85%] mt-[10%] m-auto h-[60vh] text-center">
+            <thead>
+                <th class="text-3xl text-white border-indigo-500 border-b-4">Time</th>
+                <th class="text-3xl text-white border-indigo-500 border-b-4">Work</th>
+            </thead>
+            <tr>
+                <td class="text-2xl font-semibold text-gray-400">2010-2012</td>
+                <td class="text-2xl font-semibold text-indigo-300">iOS Developer</td>
+            </tr>
+            <tr>
+                <td class="text-2xl font-semibold text-gray-400">2012-2013</td>
+                <td class="text-2xl font-semibold text-indigo-300">MS Azure Dev</td>
+            </tr>
+            <tr>
+                <td class="text-2xl font-semibold text-gray-400">2013-2017</td>
+                <td class="text-2xl font-semibold text-indigo-300">Fiver Freelancer</td>
+            </tr>
+            <tr>
+                <td class="text-2xl font-semibold text-gray-400">2017-2022</td>
+                <td class="text-2xl font-semibold text-indigo-300">Business TextUtils</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="h-[80vh]">
+        <h1 class="font-bold text-5xl col-span-10 text-white border-b-8 pb-4 px-1 w-fit ml-[10%] h-fit mt-[4%] border-indigo-500">Contact</h1>
+        <h1 class="ml-[10%] text-gray-400 text-2xl mt-[5%]">I'm currently available to get involved in new projects, so get in touch if you'd like to work together.</h1>
+        <h1 class="ml-[10%] text-gray-400 text-2xl mt-[4%]">Simply email me at <a href="mailto:yzendric@gmail.com" class="border-b-4 border-indigo-500 duration-300 ease-in-out font-semibold hover:text-indigo-500">yzendric@gmail.com</a> and let's talk about your project!
+        </h1>
+        <div class="flex gap-5 ml-[10%] mt-[2%]">
+            <img class="justify-self-center w-[10%] mt-[10%]" src="/src/twitter.png" alt="twitter" id="twitter" onclick="Redirect('https://twitter.com/zendric4896')">
+            <img class="justify-self-center w-[10%] mt-[10%]" src="/src/discord.png" alt="discord" id="discord" onclick="Redirect('https://discord.com/')">
+            <img class="justify-self-center w-[10%] mt-[10%]" src="/src/github.png" alt="github" id="github" onclick="Redirect('https://github.com/YusiferZendric')">
+
+        </div>
+        <hr class="border-gray-600 border-b-4 w-[80%] m-auto mt-[15%]">
+        <div>
+<<<<<<< HEAD
+            <img src="/src/dp.png" alt="dp" width="60" class="m-auto mt-[5%] rounded-lg">
+=======
+            <img src="src/dp.png" alt="dp" width="60" class="ml-[10%] mt-[5%] rounded-lg">
+>>>>>>> c74adfdb9381dcf41345f3a7dce50a248f462542
+        </div>
+        <div>
+            <p class="text-gray-400 ml-[10%] mt-[4%]">© 2022 - Designed and built by Aditya Singh</p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
